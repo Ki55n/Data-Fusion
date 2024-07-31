@@ -8,7 +8,7 @@ import json
 import logging
 import os
 import re
-import ssl
+import ssl 
 import tempfile
 import threading
 import time
@@ -125,7 +125,7 @@ app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB limit
 app.config['JWT_SECRET_KEY'] = 'your_jwt_secret_key'
 
 # Gemini API Configuration
-API_KEY = 'AIzaSyCsSVU10C_pPWxT3mtsLOdKqYA0qMvFMjU'
+API_KEY = 'Your api keY'
 genai.configure(api_key=API_KEY)
 
 # Create necessary folders
