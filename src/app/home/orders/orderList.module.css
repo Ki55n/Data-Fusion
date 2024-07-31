@@ -1,0 +1,62 @@
+.light {
+    --bg-color: #f9f9f9;
+    --text-color: #000;
+    --order-item-bg: #fff;
+    --order-item-border: #ddd;
+}
+
+.dark {
+    --bg-color: #000000;
+    --text-color: #fff;
+    --order-item-bg: #211f1f;
+    --order-item-border: #555;
+}
+
+.container {
+    padding: 20px;
+    width: 100%;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.orderList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.orderItem {
+    padding: 10px;
+    background-color: var(--order-item-bg);
+    border: 1px solid var(--order-item-border);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.orderName {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.orderDate, .orderAmount {
+    font-size: 14px;
+}
+
+.themeToggle {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    cursor: pointer;
+}
