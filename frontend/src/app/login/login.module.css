@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full screen height */
+    background-color: #121212; /* Black background */
+    padding: 2rem; /* Add some padding */
+    color: #fff; /* White text color */
+}
+
+.logoWrapper {
+    margin-bottom: 2rem; /* Space between logo and form */
+}
+
+.logo {
+    width: 150px; /* Adjust the logo size */
+    height: auto;
+}
+
+.formWrapper {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: #1e1e1e; /* Dark background for the form */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.inputGroup {
+    margin-bottom: 1rem;
+    width: 100%; /* Ensure input groups take full width */
+}
+
+.inputLabel {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #fff; /* White text color for labels */
+    text-align: start;
+}
+
+.inputField {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    background-color: #333; /* Dark background for input fields */
+    color: #fff; /* White text color for input fields */
+}
+
+.button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #0070f3;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%; /* Make button full width */
+}
+
+.button:hover {
+    background-color: #005bb5;
+}
