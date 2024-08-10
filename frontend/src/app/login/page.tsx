@@ -1,6 +1,6 @@
 "use client";
 import styles from "./login.module.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { useFormState } from "react-dom";
 import { authenticate } from "@/actions/account";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
@@ -8,6 +8,7 @@ import { auth } from "@/app/firebase/config";
 import { useRouter } from "next/navigation";
 import { GoogleAuthProvider } from "firebase/auth";
 import { signInWithPopup } from "firebase/auth";
+import { UserAuth } from "../context/AuthContext";
 export default function Login() {
   const initialState = {
     message: "",
@@ -31,13 +32,35 @@ export default function Login() {
       console.error(e);
     }
   };
-  const handlegoogle= async(e)=>{
-    const provider = await new GoogleAuthProvider();
-   
-   return signInWithPopup(auth, provider)
-    
+ 
+  const { user, googleSignIn, logOut } = UserAuth();
+  const [loading, setLoading] = useState(true);
 
-  }
+  const handleSignIng = async () => {
+    try {
+      await googleSignIn();
+      // if(user){
+      //   router.push("/home/catalog");
+      // }
+  
+    } catch (error) {
+      console.log(error);
+    }
+  };
+ 
+
+  
+  useEffect(() => {
+    const checkAuthentication = async () => {
+      await new Promise((resolve) => setTimeout(resolve, 50));
+      setLoading(false);
+    };
+    checkAuthentication();
+
+    if (!loading && user) {
+      router.push("/home/catalog");
+    }
+  }, [loading, user, router]);
 
   return (
     <div className={styles.container}>
@@ -70,7 +93,7 @@ export default function Login() {
         {/* Google Login Button */}
         <div class="text-center">or</div>
         <div className="mt-4">
-          <button onclick={handlegoogle} className="flex items-center justify-center w-full p-2 text-white bg-red-600 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
+          <button onClick={handleSignIng} className="flex items-center justify-center w-full p-2 text-white bg-red-600 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2">
             <svg
               className="w-5 h-5 mr-2"
               viewBox="0 0 24 24"
