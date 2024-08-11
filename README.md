@@ -10,3 +10,13 @@ Dive into a visually stunning interface where data comes to life through **inter
 In **DataFusion**, user security is paramount. Built with **Next.js**, our authentication system leverages the robust capabilities of **Firebase Authentication** to deliver a seamless and secure login experience. Users can easily sign in with their preferred method—whether it's through their **email** or the convenience of their **Google account**. With Firebase’s powerful authentication providers, DataFusion ensures that accessing your data is not only effortless but also highly secure, giving you peace of mind every time you log in.
 
 
+## AI ML features 
+Our AI/ML application is a comprehensive tool for data analysis, visualization, and machine learning. It includes robust data preprocessing and cleaning capabilities, interactive visualizations, and advanced analytics. The app supports real-time data insights via a chat interface, integrates with the Gemini API for AI-driven recommendations, and allows users to generate detailed PDF reports. Designed for scalability and ease of integration, this application is ideal for both data analysts and business users looking to automate and enhance their data-driven decision-making processes.
+
+
+
+## For its implementation refer to Readme_appPython.txt file
+
+
+
+
