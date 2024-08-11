@@ -1,5 +1,5 @@
 # Data Fusion
-DataFusion(See Deeper, Decide Smarter) is AI-Powered Data Analysis System ( Based on Prompt like Chat GPT)  AI Chat, Generative Interactive Charts, Data Insights, Psychographic Analysis, AI Analyst, Speak and Explain Charts, and more.
+## DataFusion (See Deeper, Decide Smarter) is AI-Powered Data Analysis System ( Based on Prompt like Chat GPT)  AI Chat, Generative Interactive Charts, Data Insights, Psychographic Analysis, AI Analyst, Speak and Explain Charts, and more.
  ## Frontend Overview
 Harnessing the power of **Next.js**, the frontend of **DataFusion** is a showcase of cutting-edge modern web development.
 
