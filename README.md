@@ -20,7 +20,7 @@ Category Management: Manage product categories.
 Catalogue Management: Create and manage catalogues.
 User Authentication: Handle user registration, login, and authentication.
 Seller Management: Manage seller details.
-#Features
+# Features
 Django Framework: Leverages the power of Django for rapid development and scalability.
 RESTful API: Provides a clean and straightforward API for frontend integration.
 User Authentication: Secure user authentication with Django's built-in authentication system.
